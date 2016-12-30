@@ -3,29 +3,29 @@
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "449px";
-    document.getElementById("main").style.marginLeft = "-449px";
-	document.getElementById("top_nav").style.marginLeft = "-449px";
+    document.getElementById("main").style.transform = "translateX(-449px)";
+	document.getElementById("top_nav").style.transform = "translateX(-449px)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-	document.getElementById("top_nav").style.marginLeft = "0";
+    document.getElementById("main").style.transform = "translateX(0)";
+	document.getElementById("top_nav").style.transform = "translateX(0)";
 }
 
 
 function openNav_2() {
     document.getElementById("mySidenav 2").style.width = "449px";
-    document.getElementById("main").style.marginLeft = "-449px";
-	document.getElementById("top_nav").style.marginLeft = "-449px";
+  document.getElementById("main").style.transform = "translateX(-449px)";
+  document.getElementById("top_nav").style.transform = "translateX(-449px)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav_2() {
     document.getElementById("mySidenav 2").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-	document.getElementById("top_nav").style.marginLeft = "0";
+    document.getElementById("main").style.transform = "translateX(0)";
+	document.getElementById("top_nav").style.transform = "translateX(0)";
 }
 
 function openNav_3() {
@@ -40,15 +40,15 @@ function closeNav_3() {
 
 function openNav_4() {
     document.getElementById("mySidenav 4").style.width = "449px";
-    document.getElementById("main").style.marginLeft = "-449px";
-	document.getElementById("top_nav").style.marginLeft = "-449px";
+    document.getElementById("main").style.transform = "translateX(-449px)";
+  document.getElementById("top_nav").style.transform = "translateX(-449px)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav_4() {
     document.getElementById("mySidenav 4").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
-	document.getElementById("top_nav").style.marginLeft = "0";
+    document.getElementById("main").style.transform = "translateX(0)";
+	document.getElementById("top_nav").style.transform = "translateX(0)";
 }
 
 var acc = document.getElementsByClassName("accordion");
