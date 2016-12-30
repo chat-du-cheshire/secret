@@ -11,11 +11,6 @@ html, body {
 	padding: 0;
 }
 
-html {
-    display: table;
-    margin: auto;
-}
-
 @font-face {
 	font-family: 'Bebas Neue';
 	src: url('../fonts/bebasneue/bebasneueregular.eot');
@@ -107,12 +102,13 @@ a:hover
 .main{
     min-height: 100vh;
     padding-bottom: 120px;
+    overflow: hidden;
 }
 
 /*HEADER*/
 
 
-#top_nav {
+.top_nav {
 	z-index: 1;
 	position: absolute;
 	top: 0px;
@@ -124,10 +120,13 @@ a:hover
 	padding-top: 1.429rem;/*20px*/
 }
 
+.top_nav--white{
+    background-color: rgba(255, 255, 255, 0.8);
+}
 
-#top_nav .container-fluid {
+
+.top_nav .container-fluid {
 	position: relative;
-	width: 1200px;
 }
 
 nav ul {
@@ -198,23 +197,13 @@ nav li {
 	padding-top: 0.1429rem;/*2px*/
 }
 
-.menu li a:hover {
+.menu li a:hover,
+.menu li a.active_a {
 	color: #FFFFFF;
 	background-color: #000000;
 	transition: background-color 0.6s ease;
 	transition: 0.1s ease;
-}
-
-#active_m a{
 	font-family: Proxima Nova, sans-serif;
-	color: #FFFFFF;
-	background-color: #000000;
-}
-
-#active_a {
-	color: #FFFFFF;
-	font-family: Proxima Nova, sans-serif;
-	
 }
 
 .icons {
@@ -524,7 +513,7 @@ nav li {
 #main {
     transition: transform .5s;
 }
-#top_nav {
+.top_nav {
     transition: transform .5s;
   }
 
