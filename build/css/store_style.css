@@ -144,17 +144,14 @@ nav li {
 	display: none;
 }
 
-div.logo_1 {
-	width: 151px;
-	height: 19px;
-	position: absolute;
-	top: -27px;
-	left: 4.286rem;/*60px*/
-	-o-transition:.5s;
-  -ms-transition:.5s;
-  -moz-transition:.5s;
-  -webkit-transition:.5s;
-  transition:.5s;
+.logo_1{
+    height: 37px;
+    overflow: hidden;
+}
+
+.logo_1 a{
+    display: block;
+    margin-top: -27px;
 }
 
 .logo_main {
@@ -535,20 +532,24 @@ div.logo_1 {
 .burger {
 	display: none;
 	margin-top: 0px;
-	background-image: url(../Img/burger_1.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 30px;
 	width: 43px;
+    cursor: pointer;
 }
 
-.burger:hover {
-	margin-top: 0px;
-	background-image: url(../Img/burger_2.png);
-	background-repeat: no-repeat;
-	background-position: center;
-	height: 30px;
-	width: 43px;
+.burger i{
+    display: block;
+    background-color: #333;
+    height: 0.25rem;
+    margin-bottom: 0.75rem;
+    transition: transform 0.5s;
+}
+
+.burger i:last-child{
+    margin-bottom: 0;   
+}
+
+.burger:hover i:nth-child(2){
+    transform: translateX(25%);
 }
 
 
@@ -566,19 +567,8 @@ div.logo_1 {
 		display: block;
 		position: absolute;
 		top: 0.3571rem;/*5px*/
-		left: 17.14rem;/*240px*/
+		left: 3rem;/*240px*/
 	}
-	.adapt {
-		display: none;
-	}
-	
-	div.logo_1 {
-	width: 121px;
-	height: 19px;
-	position: absolute;
-	top: -1.429rem;/*20px*/	
-	left: 2.143rem;/*30px*/
-}
 }
 
 @media screen and (max-width:1024px){
@@ -586,10 +576,7 @@ div.logo_1 {
 		display: block;
 		position: absolute;
 		top: 0.3571rem;/*5px*/
-		right: 15rem;/*210px*/
-	}
-	.adapt {
-		display: none;
+		right: 3rem;/*210px*/
 	}
 }
 
@@ -598,7 +585,7 @@ div.logo_1 {
 	.sidecart .closebtn {
     position: absolute;
     top: 0.7143rem;/*10px*/
-    right: 3.571rem;/*50px*/
+    right: 3rem;/*50px*/
     font-size: 2.571rem;/*36px;*/
     margin-left: 0px;
 	}
