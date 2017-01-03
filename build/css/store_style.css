@@ -1067,6 +1067,10 @@ nav li {
   -o-transition: opacity 0.3s ease-out;
 }
 
+.opac{
+    display: block;
+}
+
 .opac img{
     margin: auto;
 }
@@ -1190,10 +1194,12 @@ nav li {
 
 /*PAGE NUMBERS*/
 
+.page_numbers {
+    text-align: center;
+}
 
 .page_numbers ul {
 	display: inline-block;
-	margin-left: 5rem;/*70px;*/
 	margin-top: 7.143rem;/*100px;*/
 	margin-bottom: 3.571rem;/*50px;*/
 }
@@ -1290,7 +1296,6 @@ text-align: center;
 
 @media screen and (max-width: 360px) {
     .dropdown {display: inline-block;}
-	.block_cards .plus {display: none;}
 	.store_header h1 {font-size:  2.143rem;
 	padding-left:0px;}/*30px*/
 }
@@ -1299,7 +1304,6 @@ text-align: center;
 
 @media screen and (max-width:1024px){
 	.dropdown {display: inline-block;}
-.block_cards .plus {display: none;}
 	.store_header h1 {font-size: 2.143rem;
 	padding-left:0px;/*30px*/}
 
