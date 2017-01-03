@@ -12,6 +12,7 @@
     "gulp": "^3.9.1",
     "gulp-connect": "^5.0.0",
     "gulp-html-beautify": "^1.0.1",
+    "gulp-html-prettify": "0.0.1",
     "lodash": "^4.17.3"
   }
 }
