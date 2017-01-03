@@ -345,15 +345,12 @@
             <br> И мы Вам обязательно ответим.</p>
         <form action="mailto:anyamosha@gmail.com" method="post" enctype="text/plain">
             <fieldset>
-                <input type="text" name="name" placeholder="Ваше имя">
-                <br>
-                <input type="email" name="email" placeholder="Ваш e-mail">
-                <br>
-                <input type="text" name="phone" placeholder="Ваш телефон">
-                <br>
-                <textarea name="message" rows="8" cols="30" placeholder="Ваше сообщение"></textarea>
-                <br>
-                <input type="submit" value="Отправить" onclick="alert('Ваше письмо было отправлено')"> </fieldset>
+                <div><input required type="text" name="name" placeholder="Ваше имя"></div>
+                <div><input required type="email" name="email" placeholder="Ваш e-mail"></div>
+                <div><input type="text" name="phone" placeholder="Ваш телефон"></div>
+                <div><textarea required name="message" rows="8" cols="30" placeholder="Ваше сообщение"></textarea></div>
+                <div><input type="submit" value="Отправить" onclick="alert('Ваше письмо было отправлено')"></div>
+            </fieldset>
         </form>
         <p class="fillmust">Поля обязательные для заполнения</p>
     </div>

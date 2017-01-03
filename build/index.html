@@ -350,18 +350,27 @@
     </div>
     <div class="clear"></div>
     <div id="mySidenav 2" class="sideletter">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav_2()"> <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 129.3070831 97.0866165" class="cross_icon">
-                    <g>
-                        <rect x="26.6703472" y="47.5416641" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -15.0377092 60.3787003)" width="77.3886719" height="1.5996094" />
-                    </g>
-                    <g>
-                        <rect x="64.5647049" y="9.646718" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -15.0376377 60.3785286)" width="1.5996094" height="77.3891602" />
-                    </g>
-                </svg> </a>
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav_2()">
+            <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 129.3070831 97.0866165" class="cross_icon">
+                <g>
+                    <rect x="26.6703472" y="47.5416641" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -15.0377092 60.3787003)" width="77.3886719" height="1.5996094" />
+                </g>
+                <g>
+                    <rect x="64.5647049" y="9.646718" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -15.0376377 60.3785286)" width="1.5996094" height="77.3891602" />
+                </g>
+            </svg>
+        </a>
         <h3>КОНТАКТЫ</h3>
-        <p class="inform">Для того, чтобы связаться с нами, просто отправьте свое письмо, заполнив форму ниже. <br> И мы Вам обязательно ответим.</p>
+        <p class="inform">Для того, чтобы связаться с нами, просто отправьте свое письмо, заполнив форму ниже.
+            <br> И мы Вам обязательно ответим.</p>
         <form action="mailto:anyamosha@gmail.com" method="post" enctype="text/plain">
-            <fieldset> <input type="text" name="name" placeholder="Ваше имя"> <br> <input type="email" name="email" placeholder="Ваш e-mail"> <br> <input type="text" name="phone" placeholder="Ваш телефон"> <br> <textarea name="message" rows="8" cols="30" placeholder="Ваше сообщение"></textarea>                <br> <input type="submit" value="Отправить" onclick="alert('Ваше письмо было отправлено')"> </fieldset>
+            <fieldset>
+                <div><input required type="text" name="name" placeholder="Ваше имя"></div>
+                <div><input required type="email" name="email" placeholder="Ваш e-mail"></div>
+                <div><input type="text" name="phone" placeholder="Ваш телефон"></div>
+                <div><textarea required name="message" rows="8" cols="30" placeholder="Ваше сообщение"></textarea></div>
+                <div><input type="submit" value="Отправить" onclick="alert('Ваше письмо было отправлено')"></div>
+            </fieldset>
         </form>
         <p class="fillmust">Поля обязательные для заполнения</p>
     </div>

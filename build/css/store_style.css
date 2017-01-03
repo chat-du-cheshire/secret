@@ -368,6 +368,7 @@ nav li {
     transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
 }
 
+.individual_order_sent .fillmust,
 .sideletter .fillmust {
 	margin-left: 1.429rem;/*20px*/
 	background-image:url(../Img/star.png);
@@ -391,7 +392,9 @@ nav li {
 	width: 25rem;/*350px*/
 }
 
+.individual_order_sent form,
 .sideletter form {
+    margin-left: 2.857rem;
 	padding-left: 0px;
 	padding-top: 1.429rem;/*20px*/
 	font-family:Proxima Nova, sans-serif;
@@ -401,7 +404,12 @@ nav li {
 	line-height: 1.286rem;/*18px*/
 }
 
-.sideletter input[type=text] {
+.individual_order_sent input[type=text],
+.sideletter input[type=text],
+.individual_order_sent input[type=email],
+.sideletter input[type=email],
+.individual_order_sent textarea,
+.sideletter textarea  {
 	width: 80%;
 	padding: 0.8571rem 1.429rem;/*12px 20px*/
     margin: 0.5714rem 0;/*8px*/
@@ -410,35 +418,24 @@ nav li {
 	background-color:rgba(0,0,0,0.00);
 }
 
-.sideletter input[type=email] {
-	width: 80%;
-	padding: 0.8571rem 1.429rem;/*12px 20px*/
-    margin: 0.5714rem 0;/*8px*/
-    box-sizing: border-box;
-	border: 0.07143rem solid black;/*1px*/
-	background-color:rgba(0,0,0,0.00);
-}
-
+.individual_order_sent input:focus,
 .sideletter input:focus {
 	outline: none;
 	border: 0.1429rem solid #694a57;/*2px*/
 }
 
+.individual_order_sent textarea:focus,
 .sideletter textarea:focus {
 	outline: none;
 	border: 0.1429rem solid #694a57;/*2px*/
 }
 
+.individual_order_sent textarea,
 .sideletter textarea {
-	width: 80%;
-	padding: 0.8571rem 1.429rem;/*12px 20px*/
-    margin: 0.5714rem 0;/*8px*/
-    box-sizing: border-box;
-	border: 0.07143rem solid black;/*1px*/
-	background-color:rgba(0,0,0,0.00);
 	resize: none;
 }
 
+.individual_order_sent input[type=submit],
 .sideletter input[type=submit] {
 	width: 25%;
 	text-align: center;
@@ -453,6 +450,11 @@ nav li {
 	margin-right: 5.857rem;/*82px*/
 }
 
+.individual_order_sent input[type=submit]{
+    margin-right: 20%;
+}
+
+.individual_order_sent input[type=submit]:hover,
 .sideletter input[type=submit]:hover {
 	border: 0.07143rem solid #694a57;/*1px*/
 	background-color:rgba(0,0,0,0.00);
@@ -460,25 +462,26 @@ nav li {
 }
 
 
-.sideletter fieldset:nth-child(1) {
+.individual_order_sent [required],
+.sideletter [required] {
 	background-image:url(../Img/star.png);
-    background-position: 340px 20px; 
+    background-position: 98% 25%; 
     background-repeat: no-repeat;
-    padding-left: 2.857rem;/*40px*/
+}
+
+.individual_order_sent textarea[required],
+.sideletter textarea[required]{
+    background-position: 98% 5%; 
 }
 
 
+.individual_order_sent input[type=email],
 .sideletter input[type=email] {
-	background-image:url(../Img/star.png);
-    background-position: 299px 10px; 
-    background-repeat: no-repeat;
     padding-right: 0.7143rem;/*10px*/
 }
 
+.individual_order_sent textarea,
 .sideletter textarea {
-	background-image:url(../Img/star.png);
-    background-position: 299px 10px; 
-    background-repeat: no-repeat;
     padding-right: 0.7143rem;/*10px*/
 }
 
