@@ -1411,7 +1411,7 @@ text-align: center;
 }
 
 
-	button.accordion {
+button.accordion {
     background-color: #f6f6f6;
     color: #282828;
 	font-family: Bebas Neue Regular,sans-serif;
@@ -1419,7 +1419,6 @@ text-align: center;
 	font-weight: 400;
     cursor: pointer;
     padding: 18px;
-	margin-left: 20px;
     width: 100%;
     border: none;
     text-align: left;
@@ -1452,7 +1451,6 @@ div.panel {
     overflow: hidden;
     transition: 0.6s ease-in-out;
     opacity: 0;
-	margin-left: 20px;
 }
 
 div.panel.show {
