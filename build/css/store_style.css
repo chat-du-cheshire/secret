@@ -334,7 +334,7 @@ nav li {
 /* The navigation menu links */
 
 .sidecart h3,
-p {
+.sidecart p {
     text-decoration: none;
     color: #000000;
     transition: 0.3s;
@@ -477,7 +477,7 @@ p {
 /* The navigation menu links */
 
 .sideletter h3,
-p {
+.sideletter p {
     text-decoration: none;
     color: #000000;
     transition: 0.3s;
@@ -1229,7 +1229,7 @@ p {
 /* The navigation menu links */
 
 .sidecart_full h3,
-p {
+.sidecart_full p {
     text-decoration: none;
     color: #000000;
     transition: 0.3s;
@@ -2464,4 +2464,149 @@ div.panel p {
 .footer {
     margin-top: -120px;
     position: relative;
+}
+
+
+.about_banner_right{
+    padding-top: 160px;
+}
+
+.about_banner_header{
+    font-size: 44px;
+    font-family: Bebas Neue;
+}
+
+.logo_shtrih{
+    margin: 75px 0 65px;
+}
+
+
+.about_banner_right p{
+    margin-bottom: 25px;
+}
+
+.about_banner_right h3.top_bordered{
+    border-top: 6px solid black;
+    font-size: 22px;
+    font-family: Bebas Neue;
+    padding-top: 20px;
+    margin: 90px 0;
+}
+
+.marg-bottom-90{
+    margin-bottom: 90px;
+}
+
+.about_banner_right  p.bred{
+    font-family: Bebas Neue;
+    font-size: 18px;
+}
+
+.about_banner_right  p.bred span{
+    background-color: black;
+    color: white;
+}
+
+.marg-top--15
+{
+    margin-top: -15px;
+}
+
+.marg-left-20prc{
+    margin-left: 20%;
+}
+
+.about_banner_right  img.marg-left-20prc{
+    max-width: 80%;
+}
+
+.about_banner_quotes{
+    position: relative;
+    padding: 15%;
+    margin: 100px 0 115px;
+}
+
+.about_banner_quotes:before,
+.about_banner_quotes:after{
+    position: absolute;
+    font-family: Bebas Neue;
+    color: #7b7b7b;
+    font-size: 175px;
+}
+
+.about_banner_quotes:before{
+    content: '“';
+    top: -10%;
+    left: 0;
+}
+.about_banner_quotes:after{
+    content: '”';
+    bottom: -20%;
+    right: 0;
+}
+
+
+
+.about_banner_quotes p:first-child{
+    font-size: 22px;
+    font-family: Bebas Neue;
+    line-height: 25px;
+}
+
+.about_banner_quotes p:last-child{
+    position: relative;
+    margin-left: 25%;
+    font-family: Proxima Nova;
+    display: inline-block;
+}
+
+.about_banner_quotes p:last-child:before{
+    content: '';
+    position: absolute;
+    left: -100%;
+    width: 90%;
+    border-top: 1px solid black;
+    top: 50%;
+}
+
+.header_rotated{
+    display: inline-block;
+    transform-origin: bottom left;
+    transform: rotateZ(-90deg) translate(-110%, -20%);
+    margin: 0;
+}
+
+
+
+.hidden_scroll{
+    height: 100%;
+    overflow-y: scroll;
+    margin-right: -30px;
+}
+
+.about_banner_right  .overlay_place{
+    padding-bottom: 14.29%;
+}
+
+.about_banner{
+    position: relative;
+    background-image: url(../Img/About/Anita.png);
+    background-attachment: fixed;
+    background-size: contain;
+    background-position: top left;
+    background-repeat: no-repeat;
+    height: 75vh;
+    overflow: hidden;
+}
+
+.about_banner:after{
+    content: '';
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    background-image: url(../Img/overlay.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding-bottom: 8.33333333333%;
 }
