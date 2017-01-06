@@ -2765,7 +2765,7 @@ div.panel p {
 
 .lookbook_title h1{
     display: inline-block;
-    font-size: 110px;
+    font-size: 100px;
     margin: 0;
     line-height: 1;
 }
@@ -2778,6 +2778,11 @@ div.panel p {
 
 .lookbook_banner img{
     width: 100%;
+}
+
+.lookbook_content .lift-up{
+    /*transform: translate(0, -50%);*/
+    margin-top: -75%;
 }
 
 .lookbook_content_text{
@@ -2824,6 +2829,52 @@ div.panel p {
 .lookbook_gallery img{
     margin: auto;
     margin-bottom: 10%;
+}
+
+.lookbook_content_images{
+    clear: left;
+    overflow: hidden;
+    margin-bottom: 150px;
+}
+
+.lookbook_content_images--kjaroskuro{
+    background-image: url(../Img/kjaroscuro/first_4.jpg);
+    background-position: top right;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.lookbook_rotate{
+    position: relative;
+    margin-bottom: 150px;
+}
+
+.lookbook_rotate h2{
+    font-family: Bebas Neue;
+    font-size: 55px;
+    margin: 0;
+    
+}
+
+@media screen and (min-width:768px){
+    .lookbook_rotate h2{
+        transform: rotateZ(-90deg) translate(-75%);    
+    }
+
+}
+
+@media screen and (max-width:768px){
+    .lookbook_rotate .ico-360{
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+}
+
+.lookbook_rotate svg
+{
+        display: block;
+    width: 75px;
 }
 
 @media screen and (min-width:768px){
