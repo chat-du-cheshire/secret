@@ -2751,3 +2751,83 @@ div.panel p {
 #about-carousel .carousel-indicators li.active{
     background-color: black;
 }
+
+.lookbook_banner {
+    position: relative;
+}
+
+.lookbook_title{
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    transform: translate(0, -50%);
+}
+
+.lookbook_title h1{
+    display: inline-block;
+    font-size: 110px;
+    margin: 0;
+    line-height: 1;
+}
+
+.lookbook_title_logo{
+    display: inline-block;
+    transform-origin: top right;
+    transform: rotateZ(270deg) translate(80%);
+}
+
+.lookbook_banner img{
+    width: 100%;
+}
+
+.lookbook_content_text{
+    max-width: 390px;
+    position: relative;
+    background-color: #f6f6f6;
+    padding: 25px 45px;
+    transform: translate(0, -50%);
+}
+
+.lookbook_content_text:before,
+.lookbook_content_text:after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+}
+
+.lookbook_content_text:before{
+    border-top: 2px solid black;
+    border-left: 2px solid black;
+    top: -5px;
+    left: -5px;
+}
+
+
+.lookbook_content_text:after{
+    border-bottom: 2px solid black;
+    border-right: 2px solid black;
+    bottom: -5px;
+    right: -5px;
+}
+
+.lookbook_content_text p{
+    margin: 0;
+    font-size: 16px;
+    font-family: Proxima Nova;
+    font-weight: 200;
+    letter-spacing: 1px;
+    line-height: 1.25;
+
+}
+
+.lookbook_gallery img{
+    margin: auto;
+    margin-bottom: 10%;
+}
+
+@media screen and (min-width:768px){
+    .lookbook_gallery > div:nth-child(2) > img:first-child{
+        margin-top: 25%;
+    }
+}
