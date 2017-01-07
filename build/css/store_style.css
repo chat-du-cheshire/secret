@@ -2258,14 +2258,36 @@ div.panel p {
     margin-top: 100px;
 }
 
-.timeline {
-    position: absolute;
-    width: 2px;
-    background-color: black;
-    top: 0;
-    left: 50%;
-    margin-left: -1px;
-    bottom: 0;
+@media screen and (min-width: 768px ){
+    .timeline {
+        position: absolute;
+        width: 2px;
+        background-color: black;
+        top: 0;
+        left: 50%;
+        margin-left: -1px;
+        bottom: 0;
+    }
+    
+    .blog_main_item:before{
+        position: absolute;
+        top: 50%;
+        margin-top: -1px;
+        width: 14px;
+        height: 2px;
+        background-color: black;
+        content: '';
+    }
+
+    .row:nth-child(odd) .blog_main_item:before{
+        right: -7px;
+
+    }
+
+    .row:nth-child(even) .blog_main_item:before{
+        left: -7px;
+
+    }
 }
 
 .blog_main_item {
@@ -2273,25 +2295,6 @@ div.panel p {
     position: relative;
 }
 
-.blog_main_item:before{
-    position: absolute;
-    top: 50%;
-    margin-top: -1px;
-    width: 14px;
-    height: 2px;
-    background-color: black;
-    content: '';
-}
-
-.row:nth-child(odd) .blog_main_item:before{
-    right: -7px;
-
-}
-
-.row:nth-child(even) .blog_main_item:before{
-    left: -7px;
-
-}
 
 
 .blog_main_item .date{
@@ -2431,6 +2434,46 @@ div.panel p {
 .blog_main_item a:hover .right_icon_blog{
     transform: translate(100%);
 }
+
+
+.blog_main_inner .blog_back{
+    display: inline-block;
+    transform: rotateZ(180deg);
+}
+
+.blog_content{
+    padding: 200px 0;
+}
+
+.blog_content h1 {
+    transform: none;
+    font-size: 48px;
+    line-height: 1.25;
+    margin: 0;
+    margin-bottom: 50px;
+}
+
+.blog_content a{
+    color: black;
+}
+
+.blog_content p{
+    font-size: 16px;
+    line-height: 1.25;
+    font-family: Proxima Nova;
+    margin-bottom: 25px;
+}
+
+.blog_gallery img{
+    margin-bottom: 10%;
+}
+
+@media screen and (min-width:768px){
+    .blog_gallery > div:nth-child(2) > img:first-child{
+        margin-top: 25%;
+    }
+}
+
 
 /*ABOUT*/
 
@@ -2886,7 +2929,7 @@ div.panel p {
 
 .lookbook_rotate svg
 {
-        display: block;
+    display: block;
     width: 75px;
 }
 
