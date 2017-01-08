@@ -21,7 +21,7 @@
 <body>
     <div id="main" class="main">
         <div class="about_main">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="about_banner row">
                     <div class="hidden_scroll">
                         <div class="about_banner_right col-sm-7 col-sm-offset-5 col-xs-12">
@@ -121,6 +121,7 @@
                         </div>
                     </div>
                 </div>
+                <div class="about_banner_overlay row"></div>
                 <div class="about_content row">
                     <div class="about_title">
                         <h1>Backstage</h1>
@@ -209,7 +210,7 @@
         </div>
         <nav id='top_nav' class="top_nav">
             <div>
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         <div class="col-xs-10 col-sm-4 col-lg-3">
                             <div class="logo_1">
@@ -388,7 +389,8 @@
                 <li class="inside"><a href="blog.html">БЛОГ</a></li>
                 <li class="inside"><a href="store.html">МАГАЗИН</a></li>
             </ul>
-            <div class="icons" onclick="closeNav_3()"> <span class="contacts inside" onclick="openNav_2()">
+            <div class="icons" onclick="closeNav_3()">
+                <span class="contacts inside" onclick="openNav_2()">
                     <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 60.1778908 38.8171577" class="letter_icon">
                         <g>
                             <path d="M45.3527603,9.4085798v20h-30v-20H45.3527603 M46.3527603,8.4085798h-1h-30h-1v1v20v1h1h30h1v-1v-20V8.4085798
@@ -402,7 +404,8 @@
                                 "/>
                         </g>
                     </svg>
-                </span> <span class="cart inside" onclick="openNav()">
+                </span>
+                <span class="cart inside" onclick="openNav()">
                     <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  viewBox="0 0 60.1778908 38.8171577" class="cart_icon">
                         <g>
                             <path d="M18.6940651,11.4085798l-1.2391968-3h-3.6443377v1h3.0653181l6.9674511,17h16.4283066l6.0957527-14.999999H18.6940651z
@@ -417,11 +420,13 @@
                                 "/>
                         </g>
                     </svg>
-                </span> <span class="cart_number inside">0</span> </div>
+                </span>
+                <span class="cart_number inside">0</span>
+            </div>
         </div>
     </div>
     <footer class="footer">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="share_icons">

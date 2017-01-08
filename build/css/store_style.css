@@ -2645,25 +2645,24 @@ div.panel p {
 .about_banner{
     position: relative;
     background-image: url(../Img/About/Anita.png);
-    background-attachment: fixed;
     background-size: contain;
     background-position: top left;
     background-repeat: no-repeat;
-    height: 75vh;
+    height: 100vh;
     overflow: hidden;
 }
 
-.about_banner:after{
+.about_banner_overlay{
     content: '';
     display: block;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
+    width: calc(100% + 30px);
     background-image: url(../Img/overlay.png);
     background-repeat: repeat-x;
     background-size: contain;
     background-position: bottom;
-    padding-bottom: 8.33333333333%;
+    margin-top: -9.3333333333%;
+    padding-bottom: 30.75%;
+    position: relative;
 }
 
 .about_title{
