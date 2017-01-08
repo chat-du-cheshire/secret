@@ -244,6 +244,7 @@ nav li {
     padding-bottom: 0.1429rem;
     /*2px*/
     padding-top: 0.1429rem;
+    cursor: pointer;
     /*2px*/
 }
 
@@ -2135,21 +2136,115 @@ div.panel p {
     position: relative;
 }
 
-.banner_collab:before{
-    content: '';
-    display: block;
-    width: 100%;
-    position: absolute;
-    bottom: 0;
-    background-image: url(../Img/overlay.png);
-    background-repeat: repeat-x;
-    background-size: contain;
-    background-position: bottom;
-    padding-bottom: 8.33333333333%;
-}
-
 .banner_collab img{
     width: 100%;
+}
+
+.banner_collab_content{
+    position: relative; 
+}
+
+
+
+.collab_title{
+    position: absolute;
+    top: 40%;
+    left: 5%;
+    transform: translate(0, -50%);
+}
+
+.collab_title h1{
+    display: inline-block;
+    font-size: 120px;
+    margin: 0;
+    line-height: 1;
+    letter-spacing: 13px;
+}
+
+.collab_title_logo{
+    display: inline-block;
+    transform-origin: top right;
+    transform: rotateZ(270deg) translate(80%);
+    height: 30px;
+}
+
+.collab_title_logo svg{
+    height: 100%;
+}
+
+.banner_collab_carousel .item{
+    color: white;
+    font-family: Bebas Neue;
+}
+
+.banner_collab_carousel{
+    position: relative;
+}
+
+.banner_collab_carousel .item p{
+    color: inherit;
+    font-size: 30px;
+    text-transform: uppercase;
+    font-family: Bebas Neue;
+}
+
+.banner_collab_carousel .item p:first-child{
+    font-family: Proxima Nova;
+    margin-bottom: 30px;
+}
+
+.banner_collab_carousel .item_logo
+{
+    display: inline-block;
+    height: 30px;
+    transform-origin: bottom right;
+    transform: rotateZ(-90deg) translate(100%);
+}
+
+.banner_collab_carousel .item_logo svg{
+    height: 100%;
+}
+
+.banner_collab_carousel .item_logo svg > *{
+    fill: white;
+    stroke: white;
+}
+
+.banner_collab_carousel .item_no{
+    font-size: 94px;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.banner_collab_carousel .item_data{
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.banner_collab_carousel .item_text{
+    position: absolute;
+    top: 50%;
+    left: 10%;
+}
+
+#banner_collab-carousel .carousel-indicators{
+    top: 65%;
+    margin: 0;
+    width: auto;
+    left: 30%;
+}
+
+#banner_collab-carousel .carousel-indicators li{
+    border-radius: 0;
+    width: 60px;
+    height: 6px;
+    background-color: black;
+    margin: 0 4px;
+    border: none;
+}
+
+#banner_collab-carousel .carousel-indicators li.active{
+    background-color: white;
 }
 
 .main_sticks {
@@ -2652,6 +2747,7 @@ div.panel p {
     overflow: hidden;
 }
 
+.banner_collab_overlay,
 .about_banner_overlay{
     content: '';
     display: block;
@@ -2819,7 +2915,7 @@ div.panel p {
 
 .lookbook_title h1{
     display: inline-block;
-    font-size: 100px;
+    font-size: 90px;
     margin: 0;
     line-height: 1;
 }
@@ -2828,6 +2924,11 @@ div.panel p {
     display: inline-block;
     transform-origin: top right;
     transform: rotateZ(270deg) translate(80%);
+    height: 30px;
+}
+
+.lookbook_title_logo svg{
+    height: 100%;
 }
 
 .lookbook_banner img{
@@ -2858,23 +2959,23 @@ div.panel p {
 .lookbook_content_text:before{
     border-top: 2px solid black;
     border-left: 2px solid black;
-    top: -5px;
-    left: -5px;
+    top: -7px;
+    left: -7px;
 }
 
 
 .lookbook_content_text:after{
     border-bottom: 2px solid black;
     border-right: 2px solid black;
-    bottom: -5px;
-    right: -5px;
+    bottom: -7px;
+    right: -7px;
 }
 
 .lookbook_content_text p{
     margin: 0;
     font-size: 16px;
     font-family: Proxima Nova;
-    font-weight: 200;
+    font-weight: 400;
     letter-spacing: 1px;
     line-height: 1.25;
 
