@@ -1110,6 +1110,7 @@ nav li {
 .block_cards {
     margin-left: 0px;
     margin-right: 0px;
+    padding-top: 200px;
 
 }
 
@@ -2059,7 +2060,7 @@ div.panel p {
 
 .carousel-control{
     background: none !important;
-    padding-top: 20%;
+    top: 25%;
 }
 
 
