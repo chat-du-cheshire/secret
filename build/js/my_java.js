@@ -34,7 +34,8 @@ function closeNav_3() {
 }
 
 
-function openNav_4() {
+function openNav_4(e) {
+    e.preventDefault()
     document.getElementById("mySidenav 4").style.width = "449px";
     document.getElementById("main").style.transform = "translateX(-449px)";
 }

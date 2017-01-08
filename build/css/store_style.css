@@ -178,10 +178,6 @@ a:hover {
     position: relative;
 }
 
-nav ul {
-    float: right;
-}
-
 nav li {
     float: left;
 }
@@ -217,7 +213,7 @@ nav li {
 }
 
 .menu {
-    padding-right: 60px;
+    padding-left: 15%;
 }
 
 .menu li {
@@ -1287,6 +1283,7 @@ nav li {
     transition: transform 0.3s ease;
 }
 
+.border,
 #border {
     padding-left: 1.429rem;
     /*20px;*/
@@ -2814,10 +2811,10 @@ div.panel p {
 }
 
 .about_title h1{
-    display: inline-block;
+        display: inline-block;
     font-family: Bebas Neue;
-    font-size: 48px;
-
+    font-size: 42px;
+    margin-right: 100px;
 }
 
 .about_content .aligned{
@@ -3084,3 +3081,107 @@ div.panel p {
     }
 }
 
+.sidecart_filled{
+    font-family: Proxima Nova;
+}
+
+.cart_item_size{
+    margin: 0.5em 0;
+    font-family: Bebas Neue;
+    font-weight: bold;
+}
+
+.cart_item_title{
+    font-family: Proxima Nova;
+    font-size: 16px;
+}
+
+.cnt_less, .cnt_more{
+    float: left;
+    padding: 4px 10px;
+    border: 1px solid black;
+}
+.cnt_curr{
+    float: left;
+    padding: 4px 18px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black; 
+}
+
+.cart_item{
+    position: relative;
+    padding-bottom: 30px ;
+    border-bottom: 1px solid black;
+}
+
+.cart_item_price{
+    padding-top: 5px;
+    font-weight: bold;
+    font-family: Proxima Nova;
+}
+
+.total_price{
+    font-family: Proxima Nova;
+    border-top: 1px solid black;
+    text-transform: uppercase;
+    margin-top: 15px;
+    padding-top: 15px;
+    padding-bottom: 30px;
+
+    overflow: hidden;
+}
+
+.sidecart_filled_wrapper {
+    padding: 0 15px 0 45px;
+}
+
+.sidecart_filled h3{
+    padding-left: 0;
+}
+
+.cart_form{
+    font-size: 18px;
+}
+
+.cart_form h3 {
+    margin: 15px 0;
+    letter-spacing: 1px;
+    font-size: 18px;
+    font-family: Proxima Nova;
+}
+
+.cart_form input[type=submit]{
+    display: block;
+    text-transform: uppercase;
+    background-color: #694a57;
+    text-align: center;
+    padding: 0.75em;
+    width: 100%;
+    border: 1px solid  #694a57;
+    color: white;
+}
+
+.cart_form input[type=submit]:hover{
+    background-color: transparent;
+    color: #694a57;
+}
+
+.cart_form textarea{
+    border: 1px solid black;
+    width: 100%;
+    resize: none;
+    background-color: transparent;
+}
+
+.cart_item_remove{
+    position: absolute;
+    width: 30px;
+    height: 20px;
+    top: -11px;
+    left: -33px;
+    cursor: pointer;
+}
+
+.cart_item_remove svg{
+    width: 100%;
+}

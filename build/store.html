@@ -163,7 +163,7 @@
                                     </div>
                                     <div class="price_pic">15 000 руб.</div>
                                 </a>
-                                <div class="into_busket_pic" onclick="openNav_4()"><a href=" ">В КОРЗИНУ</a></div>
+                                <div class="into_busket_pic" ><a href=" ">В КОРЗИНУ</a></div>
                             </div>
                             <div class="col-xs-12 col-md-4">
                                 <a class="opac" href="store_card.html">
@@ -175,7 +175,7 @@
                                     </div>
                                     <div class="price_pic">12 000 руб.</div>
                                 </a>
-                                <div class="into_busket_pic"><a href="store_card_side">В КОРЗИНУ</a></div>
+                                <div class="into_busket_pic"><a onclick="openNav_4(event)" href="store_card_side">В КОРЗИНУ</a></div>
                             </div>
                             <div class="col-xs-12 col-md-4">
                                 <a class="opac" href="store_card.html">
@@ -521,32 +521,74 @@
                 </span> <span class="cart_number inside">0</span> </div>
         </div>
     </div>
-    <div id="mySidenav 4" class="sidecart_full">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav_4()">
-            <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 129.3070831 97.0866165" class="cross_icon">
-                <g>
-                    <rect x="26.6703472" y="47.5416641" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -15.0377092 60.3787003)" width="77.3886719" height="1.5996094" />
-                </g>
-                <g>
-                    <rect x="64.5647049" y="9.646718" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -15.0376377 60.3785286)" width="1.5996094" height="77.3891602" />
-                </g>
-            </svg>
-        </a>
-        <h3>ВАША КОРЗИНА</h3>
-        <p>В корзине пока нет товаров</p>
-        <div id="border"></div>
-        <a class="move_store" href="store.html">
-            <h3>ПЕРЕЙТИ К ПОКУПКАМ</h3> <span class="right_icon">
-                <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"  xml:space="preserve">
+    <div id="mySidenav 4" class="sidecart sidecart_filled">
+        <div class="sidecart_filled_wrapper">
+            
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav_4()">
+                <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 129.3070831 97.0866165" class="cross_icon">
                     <g>
-                        <rect x="15.1458216" y="40.2688599" width="10.253418" height="1"/>
+                        <rect x="26.6703472" y="47.5416641" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -15.0377092 60.3787003)" width="77.3886719" height="1.5996094" />
                     </g>
                     <g>
-                        <polygon points="27.0012226,45.2327271 34.2165565,40.7688599 27.0012226,36.305481 27.5275898,35.454895 36.1169472,40.7688599 
-                            27.5275898,46.083313    "/>
+                        <rect x="64.5647049" y="9.646718" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -15.0376377 60.3785286)" width="1.5996094" height="77.3891602" />
                     </g>
                 </svg>
-            </span> </a>
+            </a>
+            <h3>ВАША КОРЗИНА</h3>
+            <div class="cart_item">
+                <div class="cart_item_remove">
+                    <svg version="1.2" baseProfile="tiny" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 129.3070831 97.0866165" class="cross_icon">
+                        <g>
+                            <rect x="26.6703472" y="47.5416641" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -15.0377092 60.3787003)" width="77.3886719" height="1.5996094" />
+                        </g>
+                        <g>
+                            <rect x="64.5647049" y="9.646718" transform="matrix(0.7071068 -0.7071068 0.7071068 0.7071068 -15.0376377 60.3785286)" width="1.5996094" height="77.3891602" />
+                        </g>
+                    </svg>
+                </div>
+                <div class="row">
+                    <div class="col-xs-4">
+                        <img class="img-responsive" src="Img/Store/pic_2.jpg">
+                    </div>
+                    <div class="col-xs-8">
+                        <div class="cart_item_title">Платье в японском <br/>стиле из коллекции <br/>KJAROSCURO</div>
+                        <div class="cart_item_size">M</div>
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <div class="cart_item_count">
+                                    <div class="cnt_less">-</div>
+                                    <div class="cnt_curr">1</div>
+                                    <div class="cnt_more">+</div>
+                                </div>
+                            </div>
+                            <div class="col-xs-6 cart_item_price">
+                                12,000.00 руб.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="cart_form">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h3>Ваши комментарии</h3>
+                        <form>
+                            <div>
+                                <textarea rows="5"></textarea>
+                            </div>
+                            <div class="total_price ">
+                                <div class="col-xs-6">ИТОГО</div>
+                                <div class="col-xs-6 text-right">15,600.00</div>
+                            </div>
+                            <div class="">
+                                <input type="submit" value="ОФОРМИТЬ ЗАКАЗ" onclick="event.preventDefault()">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
     </div>
     <footer class="footer">
         <div class="container">
