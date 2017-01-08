@@ -19,19 +19,8 @@
 
 <body>
     <div id="main" class="main">
-        <div class="indiv_header">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="col-md-6 col-md-offset-4">
-                            <h1 class="individ_header"> ИНДИВИДУАЛЬНЫЙ ЗАКАЗ</h1>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
         <div class="store_main">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="hidden-xs col-sm-4 col-md-3">
                         <ul class="filter_menu">
@@ -158,19 +147,30 @@
                         </ul>
                     </div>
                     <div class="col-sm-8 col-md-9">
-                        <div class="individual_order_sent">
-                            <p>Вы также можете заказать эксклюзивную вещь пошитую по Вашим меркам. Просто напишите нам, заполнив форму ниже. И мы обязательно свяжемся с Вами, чтобы уточнить детали и стоимость заказа.</p>
-                            <form action="mailto:anyamosha@gmail.com"
-                                method="post" enctype="text/plain">
-                                <fieldset> 
-                                    <div><input required type="text" name="name" placeholder="Ваше имя"></div>
-                                    <div><input required type="email" name="email" placeholder="Ваш e-mail"></div>
-                                    <div><input type="text" name="phone" placeholder="Ваш телефон"></div>
-                                    <div><textarea required name="message" rows="8" cols="30" placeholder="Ваше сообщение"></textarea></div>
-                                    <div><input type="submit" value="Отправить" onclick="alert('Ваше письмо было отправлено')"></div>
-                                </fieldset>
-                            </form>
-                            <p class="fillmust">Поля обязательные для заполнения</p>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <h1 class="individ_header">ИНДИВИДУАЛЬНЫЙ ЗАКАЗ</h1>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="individual_order_sent col-xs-12 col-sm-8">
+                                <p>Вы также можете заказать эксклюзивную вещь пошитую по Вашим меркам. <br/>Просто напишите нам, заполнив форму ниже. И мы обязательно свяжемся <br/>с Вами, чтобы уточнить детали и стоимость заказа.</p>
+                                <form action="mailto:anyamosha@gmail.com"
+                                    method="post" enctype="text/plain">
+                                    <fieldset> 
+                                        <div><input required type="text" name="name" placeholder="ФИО"></div>
+                                        <div><input required type="email" name="email" placeholder="E-MAIL"></div>
+                                        <div><input type="text" name="phone" placeholder="ТЕЛЕФОН"></div>
+                                        <div><textarea required name="message" rows="8" cols="30" placeholder="ВАШЕ СООБЩЕНИЕ (опишите пожалуйста Ваши пожелания)"></textarea></div>
+                                        <div>
+                                            <p class="fillmust">Поля обязательные для заполнения</p>
+                                            <input type="submit" value="Отправить" onclick="alert('Ваше письмо было отправлено')">
+                                        </div>
+                                    </fieldset>
+                                </form>
+                                
+                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -178,7 +178,7 @@
         </div>
         <nav id='top_nav' class="top_nav">
             <div>
-                <div class="container-fluid">
+                <div class="container">
                     <div class="row">
                         <div class="col-xs-10 col-sm-4 col-lg-3">
                             <div class="logo_1">
@@ -390,7 +390,7 @@
             </span> </a>
     </div>
     <footer class="footer">
-        <div class="container-fluid">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <div class="share_icons">
