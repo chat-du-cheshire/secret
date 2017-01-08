@@ -2535,6 +2535,20 @@ div.panel p {
     transform: rotateZ(180deg) translate(100%);
 }
 
+.blog_main_inner a.concetr_link span:last-child {
+    vertical-align: super;
+    font-weight: 600;
+}
+
+.blog_main_inner a  .link_ico{
+    display: inline-block;
+    width: 34px;
+}
+
+.blog_main_inner .link_ico svg{
+    width: 100%;
+}
+
 .blog_content{
     padding: 200px 0;
 }
