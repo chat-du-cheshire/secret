@@ -154,7 +154,7 @@
                                         </div>
                                         <div class="price_pic">12 000 руб.</div>
                                     </a>
-                                    <div class="into_busket_pic"><a href="store_card_side">В КОРЗИНУ</a></div>
+                                    <div class="into_busket_pic"><a onclick="openNav_4(event)" href="store_card.html">В КОРЗИНУ</a></div>
                                 </div>
                                 <div class="col-sm-4">
                                     <a class="opac" href="store_card.html">
@@ -166,7 +166,7 @@
                                         </div>
                                         <div class="price_pic">3 600 руб.</div>
                                     </a>
-                                    <div class="into_busket_pic"><a href="store_card_side">В КОРЗИНУ</a></div>
+                                    <div class="into_busket_pic"><a onclick="openNav_4(event)" href="store_card.html">В КОРЗИНУ</a></div>
                                 </div>
                                 <div class="col-sm-4">
                                     <a class="opac" href="store_card.html">
@@ -178,7 +178,7 @@
                                         </div>
                                         <div class="price_pic">8 000 руб.</div>
                                     </a>
-                                    <div class="into_busket_pic"><a href="store_card_side">В КОРЗИНУ</a></div>
+                                    <div class="into_busket_pic"><a onclick="openNav_4(event)" href="store_card.html">В КОРЗИНУ</a></div>
                                 </div>
                             </div>
                             <div class="item col-sm-10 col-sm-offset-1">
@@ -192,7 +192,7 @@
                                         </div>
                                         <div class="price_pic">12 000 руб.</div>
                                     </a>
-                                    <div class="into_busket_pic"><a href="store_card_side">В КОРЗИНУ</a></div>
+                                    <div class="into_busket_pic"><a onclick="openNav_4(event)" href="store_card.html">В КОРЗИНУ</a></div>
                                 </div>
                                 <div class="col-sm-4">
                                     <a class="opac" href="store_card.html">
@@ -204,7 +204,7 @@
                                         </div>
                                         <div class="price_pic">3 600 руб.</div>
                                     </a>
-                                    <div class="into_busket_pic"><a href="store_card_side">В КОРЗИНУ</a></div>
+                                    <div class="into_busket_pic"><a onclick="openNav_4(event)" href="store_card.html">В КОРЗИНУ</a></div>
                                 </div>
                                 <div class="col-sm-4">
                                     <a class="opac" href="store_card.html">
@@ -216,7 +216,7 @@
                                         </div>
                                         <div class="price_pic">8 000 руб.</div>
                                     </a>
-                                    <div class="into_busket_pic"><a href="store_card_side">В КОРЗИНУ</a></div>
+                                    <div class="into_busket_pic"><a onclick="openNav_4(event)" href="store_card.html">В КОРЗИНУ</a></div>
                                 </div>
                             </div>
                         </div>
@@ -362,8 +362,8 @@
             </svg>
         </a>
         <h3>КОНТАКТЫ</h3>
-        <p class="inform">Для того, чтобы связаться с нами, просто отправьте свое письмо, заполнив форму ниже.
-            <br> И мы Вам обязательно ответим.</p>
+        <p class="inform">Для того, чтобы связаться с нами, просто отправьте свое письмо,<br/>заполнив форму ниже.
+            <br>И мы Вам обязательно ответим.</p>
         <form action="mailto:anyamosha@gmail.com" method="post" enctype="text/plain">
             <fieldset>
                 <div><input required type="text" name="name" placeholder="Ваше имя"></div>
@@ -482,8 +482,10 @@
                                 <textarea rows="5"></textarea>
                             </div>
                             <div class="total_price ">
-                                <div class="col-xs-6">ИТОГО</div>
-                                <div class="col-xs-6 text-right">15,600.00</div>
+                                <div class="row">
+                                    <div class="col-xs-6">ИТОГО</div>
+                                    <div class="col-xs-6 text-right">15,600.00</div>
+                                </div>
                             </div>
                             <div class="">
                                 <input type="submit" value="ОФОРМИТЬ ЗАКАЗ" onclick="event.preventDefault()">
