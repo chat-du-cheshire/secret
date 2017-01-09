@@ -89,28 +89,51 @@ function showSlides(n) {
   for (i = 0; i < picksl.length; i++){
     picksl[i].classList.remove('active'); 
   }
-  slides[slideIndex-1].classList.add('animated');
-  slides[slideIndex-1].style.display = "block"; 
-  sticksl[slideIndex-1].classList.add("active");
-  picksl[slideIndex-1].classList.add('active');
+  if(slides[slideIndex-1]){
+    slides[slideIndex-1].classList.add('animated');
+    slides[slideIndex-1].style.display = "block"; 
+  }
+  if(sticksl[slideIndex-1])
+    sticksl[slideIndex-1].classList.add("active");
+  if(picksl[slideIndex-1])
+    picksl[slideIndex-1].classList.add('active');
 }
 
 
 
 
+$(function(){
+  console.log("ready")
+  /*UP BUTTON*/
 
-/*UP BUTTON*/
+  // ===== Scroll to Top ==== 
+  // $(window).scroll(function() {
+  //     if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
+  //         $('#return-to-top').fadeIn(200);    // Fade in the arrow
+  //     } else {
+  //         $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+  //     }
+  // });
+  // $('#return-to-top').click(function() {      // When arrow is clicked
+  //     $('body,html').animate({
+  //         scrollTop : 0                       // Scroll to top of body
+  //     }, 500);
+  // });
 
-// ===== Scroll to Top ==== 
-$(window).scroll(function() {
-    if ($(this).scrollTop() >= 50) {        // If page is scrolled more than 50px
-        $('#return-to-top').fadeIn(200);    // Fade in the arrow
+  $(window).scroll(function(e){
+    if($(this).scrollTop() > $(window).height() / 2){
+      $('#return-to-top').addClass('visible');
     } else {
-        $('#return-to-top').fadeOut(200);   // Else fade out the arrow
+      $('#return-to-top').removeClass('visible');
     }
+  });
+
+  $('#return-to-top').click(function(e) {
+    e.preventDefault()
+    $('html, body').animate({
+        scrollTop: 0
+    }, 600);
 });
-$('#return-to-top').click(function() {      // When arrow is clicked
-    $('body,html').animate({
-        scrollTop : 0                       // Scroll to top of body
-    }, 500);
-});
+  
+})
+
