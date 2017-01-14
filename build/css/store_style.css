@@ -193,7 +193,15 @@ nav li {
 
 .logo_1 a {
     display: block;
-    margin-top: -27px;
+    margin-top: -0.1429rem;
+}
+
+.logo_1 a svg{
+    max-width: 190px;
+}
+
+.index-video{
+    position: relative;
 }
 
 .logo_main {
@@ -896,29 +904,6 @@ nav li {
     background-color: #000000;
 }
 
-
-/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-
-@media screen and (max-height: 450px) {
-    .sidemenu {
-        padding-top: 1.071rem;
-    }
-    /*15px*/
-}
-
-@media screen and (max-width:360px) {
-    .sidemenu {
-        padding-left: 3.571rem;
-    }
-    /*50px*/
-}
-
-@media screen (min-width:1024px) and (max-width:1024px) {
-    .sidemenu {
-        padding-left: 3.571rem;
-    }
-    /*50px*/
-}
 
 
 /*STORE*/
@@ -2054,11 +2039,11 @@ div.panel p {
     opacity: 0.2;
 }
 
-.header_like {
+.block_cards h1.header_like {
     color: #282828;
     font-size: 2.857rem;
     /*40px;*/
-    margin-top: 150px;
+    margin-top: 4em;
 }
 
 .carousel-control{
