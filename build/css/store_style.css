@@ -1340,7 +1340,7 @@ nav li {
 }
 
 .page_numbers ul li {
-    margin-left: 1.429rem;
+    margin: 0 0.75rem;
     /*20px;*/
     float: left;
 }
@@ -1627,8 +1627,11 @@ nav li {
 
 /*BUY ACCORDEON*/
 
-.buy_rules {
-    padding-top: 11.5rem;
+@media screen and (min-width: 768px){
+    
+    .buy_rules {
+        padding-top: 11.5rem;
+    }
 }
 
 button.accordion {
@@ -1680,13 +1683,18 @@ div.panel.show {
 }
 
 div.panel h3 {
-    padding-left: 38px;
     padding-top: 15px;
     font-family: Proxima Nova, sans-serif;
     color: #000000;
     font-size: 14px;
     font-weight: 700;
     line-height: 32px;
+}
+
+@media screen and (min-width: 768px){
+    div.panel h3{
+        padding-left: 38px;
+    }
 }
 
 div.panel p {
@@ -3255,4 +3263,8 @@ div.panel p {
 
 .cart_item_remove svg{
     width: 100%;
+}
+
+.after_link a{
+    color: black;
 }
