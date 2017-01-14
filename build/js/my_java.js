@@ -37,12 +37,14 @@ function closeNav_3() {
 function openNav_4(e) {
     e.preventDefault()
     document.getElementById("mySidenav 4").style.width = "449px";
+    document.getElementById("mySidenav 4").style.maxWidth = "100%";
     document.getElementById("main").style.transform = "translateX(-449px)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav_4() {
     document.getElementById("mySidenav 4").style.width = "0";
+    document.getElementById("mySidenav 4").style.maxWidth = "0";
     document.getElementById("main").style.transform = "translateX(0)";
 }
 

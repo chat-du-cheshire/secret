@@ -1628,7 +1628,7 @@ nav li {
 /*BUY ACCORDEON*/
 
 @media screen and (min-width: 768px){
-    
+
     .buy_rules {
         padding-top: 11.5rem;
     }
@@ -3267,4 +3267,12 @@ div.panel p {
 
 .after_link a{
     color: black;
+}
+
+.thumbnails.row{
+    margin: 0 -2px;
+}
+
+.thumbnails.row > div{
+    padding: 0 2px;
 }
