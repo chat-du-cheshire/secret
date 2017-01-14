@@ -2308,9 +2308,27 @@ div.panel p {
 
 .lookbook_main {
     margin-top: 150px;
-    margin-left: 0px;
-    padding-left: 0px;
 }
+
+.lookbook_main img {
+    opacity: 1;
+    transition: opacity 0.3s ease-out;
+    -moz-transition: opacity 0.3s ease-out;
+    -webkit-transition: opacity 0.3s ease-out;
+    -o-transition: opacity 0.3s ease-out;
+    margin: 0;
+}
+@media screen and (max-width: 767px){
+    .name_lookbook h3{
+        text-align: center;
+    }
+
+    .lookbook_main img{
+        margin: 2em auto 0;
+    }
+}
+
+
 
 .lookbook_main #plus_2 {
     /*background: #FFF;*/
@@ -2321,15 +2339,6 @@ div.panel p {
     -o-transition: opacity 0.3s linear;
 }
 
-.lookbook_main img {
-    opacity: 1;
-    transition: opacity 0.3s ease-out;
-    -moz-transition: opacity 0.3s ease-out;
-    -webkit-transition: opacity 0.3s ease-out;
-    -o-transition: opacity 0.3s ease-out;
-    margin-left: 0px;
-    padding-left: 0px;
-}
 
 .lookbook_main .col-md-4:hover img {
     opacity: .2;
@@ -2360,7 +2369,6 @@ div.panel p {
     font-size: 18px;
     font-weight: 400;
     text-transform: uppercase;
-    text-align: left;
 }
 
 
