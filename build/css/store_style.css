@@ -2669,7 +2669,7 @@ div.panel p {
 }
 
 .about_banner_right p{
-    margin-bottom: 25px;
+    margin: 25px 0;
 }
 
 .about_banner_right h3.top_bordered{
@@ -2756,11 +2756,13 @@ div.panel p {
     top: 50%;
 }
 
-.header_rotated{
-    display: inline-block;
-    transform-origin: bottom left;
-    transform: rotateZ(-90deg) translate(-110%, -20%);
-    margin: 0;
+@media screen and (min-width: 768px;){
+    .header_rotated{
+        display: inline-block;
+        transform-origin: bottom left;
+        transform: rotateZ(-90deg) translate(-110%, -20%);
+        margin: 0;
+    }
 }
 
 
@@ -2769,6 +2771,7 @@ div.panel p {
     height: 100%;
     overflow-y: scroll;
     margin-right: -30px;
+    padding-right: 30px;
 }
 
 .about_banner_right  .overlay_place{
@@ -2801,9 +2804,26 @@ div.panel p {
 }
 
 .about_title{
-    transform-origin: top left;
-    transform: rotateZ(-90deg) translate(-120%, 120%);
     display: inline-block; 
+    margin-bottom: 2em;
+    margin-left: 16.66666667%;
+    padding-left: 15px;
+}
+
+@media screen and (min-width: 768px){
+    .about_title{
+        transform-origin: top left;
+        transform: rotateZ(-90deg) translate(-120%);
+        margin-bottom: 0;
+        margin-left: 0;
+        padding-left: 0;
+    }
+}
+
+@media screen and (min-width: 992px){
+    .about_title{
+        transform: rotateZ(-90deg) translate(-120%, 120%);
+    }    
 }
 
 .about_title h1{
