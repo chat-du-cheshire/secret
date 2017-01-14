@@ -178,6 +178,12 @@ a:hover {
     position: relative;
 }
 
+.top_nav .cart.adapt{
+    position: relative;
+}
+
+
+
 nav li {
     float: left;
 }
@@ -202,6 +208,13 @@ nav li {
 
 .index-video{
     position: relative;
+    margin-top: 80px;
+}
+
+@media screen and (min-width: 992px){
+    .index-video{
+        margin-top: 0;
+    }
 }
 
 .logo_main {
@@ -303,9 +316,9 @@ nav li {
     line-height: 2.286rem;
     /*32px*/
     position: absolute;
-    top: 0.8571rem;
+    right: 0;
     /*12px*/
-    left: 8.571rem;
+    bottom: 0;
     /*120px*/
 }
 
@@ -793,6 +806,10 @@ nav li {
     /*6px;*/
 }
 
+.sidemenu .cart.inside{
+    position: relative;
+}
+
 .cross_icon {
     width: 37px;
     height: 37px;
@@ -836,13 +853,7 @@ nav li {
         padding-left: 28.07rem;
         /*393px;*/
     }
-    .block_sidemenu .cart_number {
-        position: absolute;
-        top: 25.36rem;
-        /*355px;*/
-        left: 35.21rem;
-        /*493px;*/
-    }
+    
 }
 
 @media screen and (max-width:360px) {
@@ -858,13 +869,7 @@ nav li {
         padding-left: 6.643rem;
         /*93px;*/
     }
-    .block_sidemenu .cart_number {
-        position: absolute;
-        top: 25.36rem;
-        /*355px;*/
-        left: 17.36rem;
-        /*243px;*/
-    }
+    
 }
 
 .block_sidemenu li {
@@ -3016,20 +3021,40 @@ div.panel p {
 
 .lookbook_banner {
     position: relative;
+    margin-top: 80px;
+}
+
+@media screen and (min-width: 992px){
+    .lookbook_banner{
+        margin-top: 0;
+    }
 }
 
 .lookbook_title{
     position: absolute;
     top: 40%;
-    left: 40%;
+    left: 30%;
     transform: translate(0, -50%);
 }
 
 .lookbook_title h1{
     display: inline-block;
-    font-size: 40px;
+    font-size: 25px;
     margin: 0;
     line-height: 1;
+}
+
+
+@media screen and (min-width: 768px){
+    .lookbook_title {
+        left: 40%;
+    }
+
+    .lookbook_title h1{
+        font-size: 40px;
+    }
+
+
 }
 
 @media screen and (min-width: 992px){
@@ -3042,7 +3067,13 @@ div.panel p {
     display: inline-block;
     transform-origin: bottom right;
     transform: rotateZ(270deg) translate(100%);
-    height: 30px;
+    height: 15px;
+}
+
+@media screen and (min-width: 768px){
+    .lookbook_title_logo{
+        height: 30px;       
+    }
 }
 
 .lookbook_title_logo svg{
