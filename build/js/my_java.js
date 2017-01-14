@@ -3,24 +3,28 @@
 /* Set the width of the side navigation to 250px and the left margin of the page content to 250px */
 function openNav() {
     document.getElementById("mySidenav").style.width = "449px";
+    document.getElementById("mySidenav").style.maxWidth = "100%";
     document.getElementById("main").style.transform = "translateX(-449px)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav() {
     document.getElementById("mySidenav").style.width = "0";
+    document.getElementById("mySidenav").style.maxWidth = "0";
     document.getElementById("main").style.transform = "translateX(0)";
 }
 
 
 function openNav_2() {
     document.getElementById("mySidenav 2").style.width = "449px";
+    document.getElementById("mySidenav 2").style.maxWidth = "100%";
   document.getElementById("main").style.transform = "translateX(-449px)";
 }
 
 /* Set the width of the side navigation to 0 and the left margin of the page content to 0 */
 function closeNav_2() {
     document.getElementById("mySidenav 2").style.width = "0";
+    document.getElementById("mySidenav 2").style.maxWidth = "0";
     document.getElementById("main").style.transform = "translateX(0)";
 }
 

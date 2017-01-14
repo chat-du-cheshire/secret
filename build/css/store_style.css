@@ -515,6 +515,10 @@ nav li {
     /*40px*/
 }
 
+.sideletter p.inform{
+    padding-right: 20%;
+}
+
 .sideletter .inform p {
     padding-top: 1.429rem;
     /*20px*/
@@ -591,7 +595,7 @@ nav li {
     border: 1px solid #694a57;
     background-color: #694a57;
     color: rgba(255, 255, 255, 1.00);
-    margin-right: 5.857rem;
+    margin-right:20%;
     text-transform: uppercase;
     font-weight: 400;
     float: right;
@@ -742,27 +746,7 @@ nav li {
         /*36px;*/
         margin-left: 0px;
     }
-    .sideletter fieldset:nth-child(1) {
-        background-image: url(../Img/star.png);
-        background-position: 310px 20px;
-        background-repeat: no-repeat;
-        padding-left: 0.7143rem;
-        /*10px*/
-    }
-    .sideletter input[type=email] {
-        background-image: url(../Img/star.png);
-        background-position: 299px 10px;
-        background-repeat: no-repeat;
-        padding-right: 0.7143rem;
-        /*10px*/
-    }
-    .sideletter textarea {
-        background-image: url(../Img/star.png);
-        background-position: 299px 10px;
-        background-repeat: no-repeat;
-        padding-right: 0.7143rem;
-        /*10px*/
-    }
+    
 }
 
 
