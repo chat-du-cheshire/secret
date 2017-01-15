@@ -2321,6 +2321,12 @@ div.panel p {
     width: 315px;
 }
 
+@media screen and (max-width: 991px){
+    .logo_index {
+        left: 20%;
+    }
+}
+
 .logo_logo {
     width: 100%;
     height: auto;
