@@ -887,7 +887,7 @@ nav li {
     transition: 0.1s ease;
 }
 
-#active a {
+.block_sidemenu .active a {
     font-family: Proxima Nova, sans-serif;
     color: #FFFFFF;
     background-color: #000000;
@@ -2905,7 +2905,18 @@ div.panel p {
 }
 
 .about_carousel{
-    margin-top: 290px;
+    margin-top: 75px;
+}
+
+@media screen and (min-width: 768px){
+    .about_carousel{
+        margin-top: 180px;
+    }
+}
+@media screen and (min-width: 992px){
+    .about_carousel{
+        margin-top: 290px;
+    }
 }
 
 #about-carousel .carousel-inner > .item{
