@@ -1307,7 +1307,7 @@ nav li {
     .sidecart .closebtn {
         position: absolute;
         top: 10px;
-        right: 50px;
+        right: 5px;
         font-size: 36px;
         margin-left: 0px;
     }
@@ -3237,6 +3237,12 @@ div.panel p {
     font-family: Proxima Nova;
 }
 
+@media screen and (max-width: 767px){
+    .cart_item_price{
+        margin-top: 1em;
+    }
+}
+
 .total_price{
     font-family: Proxima Nova;
     border-top: 1px solid black;
@@ -3305,6 +3311,8 @@ div.panel p {
 
 .after_link a{
     color: black;
+    margin: 0.5em 0;
+    display: inline-block;
 }
 
 .thumbnails.row{
