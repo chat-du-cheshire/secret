@@ -233,8 +233,10 @@ nav li {
     display: block;
 }
 
-.menu {
-    padding-left: 15%;
+@media screen and (min-width: 1200px){
+    .menu {
+        padding-left: 15%;
+    }
 }
 
 .menu li {
@@ -2730,7 +2732,7 @@ div.panel p {
 }
 
 .about_banner_right p{
-    margin: 25px 0;
+    margin: 0 0 25px;
 }
 
 .about_banner_right h3.top_bordered{
