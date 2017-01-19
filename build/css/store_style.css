@@ -2319,14 +2319,9 @@ div.panel p {
 .logo_index {
     position: absolute;
     top: 55%;
-    left: 39%;
+    left: 50%;
     width: 315px;
-}
-
-@media screen and (max-width: 991px){
-    .logo_index {
-        left: 20%;
-    }
+    transform: translate(-50%);
 }
 
 .logo_logo {
